@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bitcamp {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  padding-right: 10px;
+  border-right: 3px solid #333;
+  margin-right: 10px;
+}
+
+.kids-anime {
+  font-size: 28px;
+  font-weight: lighter;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; /* Plain white background */
+  padding: 20px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 18px;
+  color: #555;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #333;
+  transform: translateY(-2px);
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.animes {
+  text-align: center;
+  padding: 30px;
+}
+
+.anime {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from its parent element */
+}
+
+.anime img {
+  width: 100%;
+  height: 320px;
+}
+
+.anime-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Styling for the anime detail page */
+.anime-detail {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.anime-detail h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.anime-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.anime-img {
+  width: 570px;
+  height: auto;
+}
+
+.anime-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+.anime-info h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.anime-info p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.hamburger {
+  color: #333;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  .hamburger {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+  }
+  nav a {
+    font-size: 14px;
+    color: white;
+    padding: 10px 5px;
+  }
+  .logo {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+}
